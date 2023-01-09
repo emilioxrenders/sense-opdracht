@@ -1,0 +1,43 @@
+/* POST */
+.post-image {
+    aspect-ratio: 9/10;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.post-description::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.post-check {
+    color: #ed8022;
+}
+
+.post-back {
+    font-size: 0.9rem;
+}
+
+.post-topseller {
+    background: #ed8022;
+    top: 0;
+    left: 12px;
+}
+
+@media only screen and (min-width: 992px) {
+  .post-topseller {
+    left: 3rem;
+  }
+}
